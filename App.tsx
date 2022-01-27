@@ -7,9 +7,7 @@ import { LogBox } from 'react-native';
 import { StackNavigator } from './src/router/StackNavigator';
 import { PermissionsProvider } from './src/context/PermissionsContext';
 
-LogBox.ignoreLogs([
-  "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",
-]);
+LogBox.ignoreAllLogs();
 
 const AppState = ({ children }: any) => {
   return(

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
+import { Maps } from '../components/Maps';
 
 export const MapScreen = () => {
     return (
-        <View>
-            <Text> Map Screen </Text>
+        <View style={{ flex: 1 }}>
+            <Maps />
         </View>
     );
 };
